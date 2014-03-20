@@ -3,11 +3,14 @@ return array(
     'controllers' => array(
         'invokables' => array(
             'Cheetara\Controller\Index' => 'Cheetara\Controller\IndexController',
+        		'Cheetara\Controller\Category' => 'Cheetara\Controller\CategoryController',
+        		'Cheetara\Controller\Cheat' => 'Cheetara\Controller\CheatController',
+        		'Cheetara\Controller\Tag' => 'Cheetara\Controller\TagController'
         ),
     ),
     'router' => array(
         'routes' => array(
-            'task' => array(
+            'cheetara' => array(
                 'type'    => 'Segment',
                 'options' => array(
                     'route'    => '/cheetara[/:controller[/:action[/:id]]]',
